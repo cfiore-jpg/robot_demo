@@ -9,7 +9,7 @@
 
 # =============================================================================
 # Project: RobotNavigationDemo
-# Configurations: Debug
+# Configurations: Release
 # =============================================================================
 
 #############################################
@@ -21,7 +21,7 @@ ninja_required_version = 1.5
 #############################################
 # Set configuration variable for custom commands.
 
-CONFIGURATION = Debug
+CONFIGURATION = Release
 # =============================================================================
 # Include auxiliary files.
 
@@ -36,7 +36,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/cmake-build-debug/
+cmake_ninja_workdir = /Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/cmake-build-release/
 # =============================================================================
 # Object build statements for EXECUTABLE target RobotNavigationDemo
 
@@ -46,23 +46,23 @@ cmake_ninja_workdir = /Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/cmake
 
 build cmake_object_order_depends_target_RobotNavigationDemo: phony || CMakeFiles/RobotNavigationDemo.dir
 
-build CMakeFiles/RobotNavigationDemo.dir/main.cpp.o: CXX_COMPILER__RobotNavigationDemo_Debug /Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/main.cpp || cmake_object_order_depends_target_RobotNavigationDemo
+build CMakeFiles/RobotNavigationDemo.dir/main.cpp.o: CXX_COMPILER__RobotNavigationDemo_Release /Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/main.cpp || cmake_object_order_depends_target_RobotNavigationDemo
   DEP_FILE = CMakeFiles/RobotNavigationDemo.dir/main.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17
   INCLUDES = -I/Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/RobotNavigationDemo -I/Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/../RobotNavigation/include -isystem /usr/local/include/opencv4
   OBJECT_DIR = CMakeFiles/RobotNavigationDemo.dir
   OBJECT_FILE_DIR = CMakeFiles/RobotNavigationDemo.dir
 
-build CMakeFiles/RobotNavigationDemo.dir/Users/cameronfiore/C++/ShieldAI/RobotNavigation/src/Map.cpp.o: CXX_COMPILER__RobotNavigationDemo_Debug /Users/cameronfiore/C++/ShieldAI/RobotNavigation/src/Map.cpp || cmake_object_order_depends_target_RobotNavigationDemo
+build CMakeFiles/RobotNavigationDemo.dir/Users/cameronfiore/C++/ShieldAI/RobotNavigation/src/Map.cpp.o: CXX_COMPILER__RobotNavigationDemo_Release /Users/cameronfiore/C++/ShieldAI/RobotNavigation/src/Map.cpp || cmake_object_order_depends_target_RobotNavigationDemo
   DEP_FILE = CMakeFiles/RobotNavigationDemo.dir/Users/cameronfiore/C++/ShieldAI/RobotNavigation/src/Map.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17
   INCLUDES = -I/Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/RobotNavigationDemo -I/Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/../RobotNavigation/include -isystem /usr/local/include/opencv4
   OBJECT_DIR = CMakeFiles/RobotNavigationDemo.dir
   OBJECT_FILE_DIR = CMakeFiles/RobotNavigationDemo.dir/Users/cameronfiore/C++/ShieldAI/RobotNavigation/src
 
-build CMakeFiles/RobotNavigationDemo.dir/Users/cameronfiore/C++/ShieldAI/RobotNavigation/src/Robot.cpp.o: CXX_COMPILER__RobotNavigationDemo_Debug /Users/cameronfiore/C++/ShieldAI/RobotNavigation/src/Robot.cpp || cmake_object_order_depends_target_RobotNavigationDemo
+build CMakeFiles/RobotNavigationDemo.dir/Users/cameronfiore/C++/ShieldAI/RobotNavigation/src/Robot.cpp.o: CXX_COMPILER__RobotNavigationDemo_Release /Users/cameronfiore/C++/ShieldAI/RobotNavigation/src/Robot.cpp || cmake_object_order_depends_target_RobotNavigationDemo
   DEP_FILE = CMakeFiles/RobotNavigationDemo.dir/Users/cameronfiore/C++/ShieldAI/RobotNavigation/src/Robot.cpp.o.d
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -fcolor-diagnostics -std=gnu++17
   INCLUDES = -I/Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/RobotNavigationDemo -I/Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/../RobotNavigation/include -isystem /usr/local/include/opencv4
   OBJECT_DIR = CMakeFiles/RobotNavigationDemo.dir
   OBJECT_FILE_DIR = CMakeFiles/RobotNavigationDemo.dir/Users/cameronfiore/C++/ShieldAI/RobotNavigation/src
@@ -75,8 +75,8 @@ build CMakeFiles/RobotNavigationDemo.dir/Users/cameronfiore/C++/ShieldAI/RobotNa
 #############################################
 # Link the executable RobotNavigationDemo
 
-build RobotNavigationDemo: CXX_EXECUTABLE_LINKER__RobotNavigationDemo_Debug CMakeFiles/RobotNavigationDemo.dir/main.cpp.o CMakeFiles/RobotNavigationDemo.dir/Users/cameronfiore/C++/ShieldAI/RobotNavigation/src/Map.cpp.o CMakeFiles/RobotNavigationDemo.dir/Users/cameronfiore/C++/ShieldAI/RobotNavigation/src/Robot.cpp.o | /Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/../RobotNavigation/cmake-build-release/libRobotNavigation.dylib /usr/local/lib/libopencv_gapi.4.7.0.dylib /usr/local/lib/libopencv_stitching.4.7.0.dylib /usr/local/lib/libopencv_alphamat.4.7.0.dylib /usr/local/lib/libopencv_aruco.4.7.0.dylib /usr/local/lib/libopencv_barcode.4.7.0.dylib /usr/local/lib/libopencv_bgsegm.4.7.0.dylib /usr/local/lib/libopencv_bioinspired.4.7.0.dylib /usr/local/lib/libopencv_ccalib.4.7.0.dylib /usr/local/lib/libopencv_dnn_objdetect.4.7.0.dylib /usr/local/lib/libopencv_dnn_superres.4.7.0.dylib /usr/local/lib/libopencv_dpm.4.7.0.dylib /usr/local/lib/libopencv_face.4.7.0.dylib /usr/local/lib/libopencv_fuzzy.4.7.0.dylib /usr/local/lib/libopencv_hfs.4.7.0.dylib /usr/local/lib/libopencv_img_hash.4.7.0.dylib /usr/local/lib/libopencv_intensity_transform.4.7.0.dylib /usr/local/lib/libopencv_line_descriptor.4.7.0.dylib /usr/local/lib/libopencv_mcc.4.7.0.dylib /usr/local/lib/libopencv_quality.4.7.0.dylib /usr/local/lib/libopencv_rapid.4.7.0.dylib /usr/local/lib/libopencv_reg.4.7.0.dylib /usr/local/lib/libopencv_rgbd.4.7.0.dylib /usr/local/lib/libopencv_saliency.4.7.0.dylib /usr/local/lib/libopencv_sfm.4.7.0.dylib /usr/local/lib/libopencv_stereo.4.7.0.dylib /usr/local/lib/libopencv_structured_light.4.7.0.dylib /usr/local/lib/libopencv_superres.4.7.0.dylib /usr/local/lib/libopencv_surface_matching.4.7.0.dylib /usr/local/lib/libopencv_tracking.4.7.0.dylib /usr/local/lib/libopencv_videostab.4.7.0.dylib /usr/local/lib/libopencv_wechat_qrcode.4.7.0.dylib /usr/local/lib/libopencv_xfeatures2d.4.7.0.dylib /usr/local/lib/libopencv_xobjdetect.4.7.0.dylib /usr/local/lib/libopencv_xphoto.4.7.0.dylib /usr/local/lib/libopencv_shape.4.7.0.dylib /usr/local/lib/libopencv_highgui.4.7.0.dylib /usr/local/lib/libopencv_datasets.4.7.0.dylib /usr/local/lib/libopencv_plot.4.7.0.dylib /usr/local/lib/libopencv_text.4.7.0.dylib /usr/local/lib/libopencv_ml.4.7.0.dylib /usr/local/lib/libopencv_phase_unwrapping.4.7.0.dylib /usr/local/lib/libopencv_optflow.4.7.0.dylib /usr/local/lib/libopencv_ximgproc.4.7.0.dylib /usr/local/lib/libopencv_video.4.7.0.dylib /usr/local/lib/libopencv_videoio.4.7.0.dylib /usr/local/lib/libopencv_imgcodecs.4.7.0.dylib /usr/local/lib/libopencv_objdetect.4.7.0.dylib /usr/local/lib/libopencv_calib3d.4.7.0.dylib /usr/local/lib/libopencv_dnn.4.7.0.dylib /usr/local/lib/libopencv_features2d.4.7.0.dylib /usr/local/lib/libopencv_flann.4.7.0.dylib /usr/local/lib/libopencv_photo.4.7.0.dylib /usr/local/lib/libopencv_imgproc.4.7.0.dylib /usr/local/lib/libopencv_core.4.7.0.dylib
-  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
+build RobotNavigationDemo: CXX_EXECUTABLE_LINKER__RobotNavigationDemo_Release CMakeFiles/RobotNavigationDemo.dir/main.cpp.o CMakeFiles/RobotNavigationDemo.dir/Users/cameronfiore/C++/ShieldAI/RobotNavigation/src/Map.cpp.o CMakeFiles/RobotNavigationDemo.dir/Users/cameronfiore/C++/ShieldAI/RobotNavigation/src/Robot.cpp.o | /Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/../RobotNavigation/cmake-build-release/libRobotNavigation.dylib /usr/local/lib/libopencv_gapi.4.7.0.dylib /usr/local/lib/libopencv_stitching.4.7.0.dylib /usr/local/lib/libopencv_alphamat.4.7.0.dylib /usr/local/lib/libopencv_aruco.4.7.0.dylib /usr/local/lib/libopencv_barcode.4.7.0.dylib /usr/local/lib/libopencv_bgsegm.4.7.0.dylib /usr/local/lib/libopencv_bioinspired.4.7.0.dylib /usr/local/lib/libopencv_ccalib.4.7.0.dylib /usr/local/lib/libopencv_dnn_objdetect.4.7.0.dylib /usr/local/lib/libopencv_dnn_superres.4.7.0.dylib /usr/local/lib/libopencv_dpm.4.7.0.dylib /usr/local/lib/libopencv_face.4.7.0.dylib /usr/local/lib/libopencv_fuzzy.4.7.0.dylib /usr/local/lib/libopencv_hfs.4.7.0.dylib /usr/local/lib/libopencv_img_hash.4.7.0.dylib /usr/local/lib/libopencv_intensity_transform.4.7.0.dylib /usr/local/lib/libopencv_line_descriptor.4.7.0.dylib /usr/local/lib/libopencv_mcc.4.7.0.dylib /usr/local/lib/libopencv_quality.4.7.0.dylib /usr/local/lib/libopencv_rapid.4.7.0.dylib /usr/local/lib/libopencv_reg.4.7.0.dylib /usr/local/lib/libopencv_rgbd.4.7.0.dylib /usr/local/lib/libopencv_saliency.4.7.0.dylib /usr/local/lib/libopencv_sfm.4.7.0.dylib /usr/local/lib/libopencv_stereo.4.7.0.dylib /usr/local/lib/libopencv_structured_light.4.7.0.dylib /usr/local/lib/libopencv_superres.4.7.0.dylib /usr/local/lib/libopencv_surface_matching.4.7.0.dylib /usr/local/lib/libopencv_tracking.4.7.0.dylib /usr/local/lib/libopencv_videostab.4.7.0.dylib /usr/local/lib/libopencv_wechat_qrcode.4.7.0.dylib /usr/local/lib/libopencv_xfeatures2d.4.7.0.dylib /usr/local/lib/libopencv_xobjdetect.4.7.0.dylib /usr/local/lib/libopencv_xphoto.4.7.0.dylib /usr/local/lib/libopencv_shape.4.7.0.dylib /usr/local/lib/libopencv_highgui.4.7.0.dylib /usr/local/lib/libopencv_datasets.4.7.0.dylib /usr/local/lib/libopencv_plot.4.7.0.dylib /usr/local/lib/libopencv_text.4.7.0.dylib /usr/local/lib/libopencv_ml.4.7.0.dylib /usr/local/lib/libopencv_phase_unwrapping.4.7.0.dylib /usr/local/lib/libopencv_optflow.4.7.0.dylib /usr/local/lib/libopencv_ximgproc.4.7.0.dylib /usr/local/lib/libopencv_video.4.7.0.dylib /usr/local/lib/libopencv_videoio.4.7.0.dylib /usr/local/lib/libopencv_imgcodecs.4.7.0.dylib /usr/local/lib/libopencv_objdetect.4.7.0.dylib /usr/local/lib/libopencv_calib3d.4.7.0.dylib /usr/local/lib/libopencv_dnn.4.7.0.dylib /usr/local/lib/libopencv_features2d.4.7.0.dylib /usr/local/lib/libopencv_flann.4.7.0.dylib /usr/local/lib/libopencv_photo.4.7.0.dylib /usr/local/lib/libopencv_imgproc.4.7.0.dylib /usr/local/lib/libopencv_core.4.7.0.dylib
+  FLAGS = -O3 -DNDEBUG -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk
   LINK_LIBRARIES = -Wl,-rpath,/Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/../RobotNavigation/cmake-build-release -Wl,-rpath,/usr/local/lib  /Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/../RobotNavigation/cmake-build-release/libRobotNavigation.dylib  /usr/local/lib/libopencv_gapi.4.7.0.dylib  /usr/local/lib/libopencv_stitching.4.7.0.dylib  /usr/local/lib/libopencv_alphamat.4.7.0.dylib  /usr/local/lib/libopencv_aruco.4.7.0.dylib  /usr/local/lib/libopencv_barcode.4.7.0.dylib  /usr/local/lib/libopencv_bgsegm.4.7.0.dylib  /usr/local/lib/libopencv_bioinspired.4.7.0.dylib  /usr/local/lib/libopencv_ccalib.4.7.0.dylib  /usr/local/lib/libopencv_dnn_objdetect.4.7.0.dylib  /usr/local/lib/libopencv_dnn_superres.4.7.0.dylib  /usr/local/lib/libopencv_dpm.4.7.0.dylib  /usr/local/lib/libopencv_face.4.7.0.dylib  /usr/local/lib/libopencv_fuzzy.4.7.0.dylib  /usr/local/lib/libopencv_hfs.4.7.0.dylib  /usr/local/lib/libopencv_img_hash.4.7.0.dylib  /usr/local/lib/libopencv_intensity_transform.4.7.0.dylib  /usr/local/lib/libopencv_line_descriptor.4.7.0.dylib  /usr/local/lib/libopencv_mcc.4.7.0.dylib  /usr/local/lib/libopencv_quality.4.7.0.dylib  /usr/local/lib/libopencv_rapid.4.7.0.dylib  /usr/local/lib/libopencv_reg.4.7.0.dylib  /usr/local/lib/libopencv_rgbd.4.7.0.dylib  /usr/local/lib/libopencv_saliency.4.7.0.dylib  /usr/local/lib/libopencv_sfm.4.7.0.dylib  /usr/local/lib/libopencv_stereo.4.7.0.dylib  /usr/local/lib/libopencv_structured_light.4.7.0.dylib  /usr/local/lib/libopencv_superres.4.7.0.dylib  /usr/local/lib/libopencv_surface_matching.4.7.0.dylib  /usr/local/lib/libopencv_tracking.4.7.0.dylib  /usr/local/lib/libopencv_videostab.4.7.0.dylib  /usr/local/lib/libopencv_wechat_qrcode.4.7.0.dylib  /usr/local/lib/libopencv_xfeatures2d.4.7.0.dylib  /usr/local/lib/libopencv_xobjdetect.4.7.0.dylib  /usr/local/lib/libopencv_xphoto.4.7.0.dylib  /usr/local/lib/libopencv_shape.4.7.0.dylib  /usr/local/lib/libopencv_highgui.4.7.0.dylib  /usr/local/lib/libopencv_datasets.4.7.0.dylib  /usr/local/lib/libopencv_plot.4.7.0.dylib  /usr/local/lib/libopencv_text.4.7.0.dylib  /usr/local/lib/libopencv_ml.4.7.0.dylib  /usr/local/lib/libopencv_phase_unwrapping.4.7.0.dylib  /usr/local/lib/libopencv_optflow.4.7.0.dylib  /usr/local/lib/libopencv_ximgproc.4.7.0.dylib  /usr/local/lib/libopencv_video.4.7.0.dylib  /usr/local/lib/libopencv_videoio.4.7.0.dylib  /usr/local/lib/libopencv_imgcodecs.4.7.0.dylib  /usr/local/lib/libopencv_objdetect.4.7.0.dylib  /usr/local/lib/libopencv_calib3d.4.7.0.dylib  /usr/local/lib/libopencv_dnn.4.7.0.dylib  /usr/local/lib/libopencv_features2d.4.7.0.dylib  /usr/local/lib/libopencv_flann.4.7.0.dylib  /usr/local/lib/libopencv_photo.4.7.0.dylib  /usr/local/lib/libopencv_imgproc.4.7.0.dylib  /usr/local/lib/libopencv_core.4.7.0.dylib
   OBJECT_DIR = CMakeFiles/RobotNavigationDemo.dir
   POST_BUILD = :
@@ -89,7 +89,7 @@ build RobotNavigationDemo: CXX_EXECUTABLE_LINKER__RobotNavigationDemo_Debug CMak
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/cmake-build-release && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -100,7 +100,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo -B/Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/cmake-build-debug
+  COMMAND = cd /Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/cmake-build-release && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo -B/Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/cmake-build-release
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -116,7 +116,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/cmake-build-debug
+# Folder: /Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/cmake-build-release
 
 build all: phony RobotNavigationDemo
 

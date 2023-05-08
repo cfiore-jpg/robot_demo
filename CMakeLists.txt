@@ -13,7 +13,7 @@ add_executable(RobotNavigationDemo
 
 set(RobotNavigationFolder ${CMAKE_CURRENT_SOURCE_DIR}/../RobotNavigation)
 include_directories(RobotNavigationDemo ${RobotNavigationFolder}/include)
-target_link_libraries(RobotNavigationDemo ${RobotNavigationFolder}/cmake-build-debug/libRobotNavigation.dylib)
+target_link_libraries(RobotNavigationDemo ${RobotNavigationFolder}/cmake-build-release/libRobotNavigation.dylib)
 
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})

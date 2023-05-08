@@ -10,10 +10,23 @@ void show(const cv::Mat& image) {
     cv::imshow("Map", image);
     cv::waitKey(0);
     cv::destroyAllWindows();
-    cv::waitKey(5);
+    cv::waitKey(1);
 }
 
 int main() {
+
+//    Map::Ptr map = Map::load("/Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/maps/bigrect_100rand.txt");
+//
+//    Robot::Ptr bot = Robot::create(10);
+//    bot->setTarget(200, 1980);
+//    bot->setStart(200, 20);
+//    bot->giveMap(map);
+//
+//    bot->pathFind(0.98, true, "/Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/test5.avi");
+
+
+
+
 
     std::cout << "Welcome to Robot Navigation Demo" << std::endl;
     Map::Ptr map;
@@ -60,7 +73,7 @@ int main() {
             std::cout << "Press q to quit." << std::endl;
             std::cin >> choice;
             if (choice == "1") {
-                show(map->display());
+                show(map->display(false));
             } else if (choice == "2") {
                 map->clearMap();
             } else if (choice == "3") {
@@ -123,11 +136,11 @@ int main() {
                 std::cin >> filename;
                 map = Map::load(filename);
             } else if (choice == "7") {
-                std::cout << "Enter robot start position (x y), radius, and search radius:" << std::endl;
-                int x, y;
-                double radius, search_radius;
-                std::cin >> x >> y >> radius >> search_radius;
-                robot = Robot::create(x, y, radius, search_radius, map);
+                std::cout << "Enter robot radius:" << std::endl;
+                double radius;
+                std::cin >> radius;
+                robot = Robot::create(radius);
+                robot->giveMap(map);
                 break;
             } else if (choice == "q") {
                 return 0;
@@ -154,11 +167,11 @@ int main() {
             std::cout << "Press q to quit." << std::endl;
             std::cin >> choice;
             if (choice == "1") {
-                show(map->display());
+                show(map->display(false));
             } else if (choice == "2") {
                 map->clearMap();
             } else if (choice == "3") {
-                show(robot->showHeatMap());
+                show(map->display(true));
             } else if (choice == "4") {
                 robot->printParameters();
             } else if (choice == "5") {
@@ -242,8 +255,8 @@ int main() {
                            "target, but it will be more careless!\n";
                 double lambda;
                 std::cin >> lambda;
-                auto path = robot->findSafestPath(lambda, save, filename);
-                show(robot->showHeatMap({path}, {cv::Vec3b(0.,0.,255.)}));
+                auto path = robot->pathFind(lambda, save, filename);
+                show(robot->showOnMap(true, {path}, {cv::Vec3b(0.,0.,255.)}));
             } else if (choice == "10") {
                 std::cout << "Enter full file path:" << std::endl;
                 std::cin >> filename;
@@ -252,7 +265,7 @@ int main() {
                 std::cout << "Enter full file path:" << std::endl;
                 std::cin >> filename;
                 Map::Ptr new_map = Map::load(filename);
-                robot->changeMap(new_map);
+                robot->giveMap(new_map);
                 map = new_map;
             } else if (choice == "q") {
                 return 0;
