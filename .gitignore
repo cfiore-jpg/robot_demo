@@ -2,3 +2,4 @@ videos/
 maps/
 *.avi
 *build*/
+.idea/
