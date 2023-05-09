@@ -14,19 +14,20 @@ void show(const cv::Mat& image) {
 }
 
 int main() {
-
-//    Map::Ptr map = Map::load("/Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/maps/bigrect_100rand.txt");
+//    auto start = std::chrono::high_resolution_clock::now();
+//    Map::Ptr m1 = Map::load("/Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/maps/house.txt");
+//    auto end = std::chrono::high_resolution_clock::now();
+//    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+//    std::cout << "Load time: " << duration.count() << " milliseconds\n";
 //
-//    Robot::Ptr bot = Robot::create(10);
-//    bot->setTarget(200, 1980);
-//    bot->setStart(200, 20);
-//    bot->giveMap(map);
+//    Robot::Ptr rob = Robot::create(10);
+//    rob->giveMap(m1);
+//    rob->setStart(11, 11);
+//    rob->setTarget(11, 988);
 //
-//    bot->pathFind(0.98, true, "/Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/test5.avi");
-
-
-
-
+//    rob->pathFind(0.98, true, "/Users/cameronfiore/C++/ShieldAI/RobotNavigationDemo/videos/v4/house.avi");
+//
+//    exit(0);
 
     std::cout << "Welcome to Robot Navigation Demo" << std::endl;
     Map::Ptr map;
@@ -274,6 +275,7 @@ int main() {
             std::cout << e.what() << std::endl;
         }
     }
+
 }
 
 

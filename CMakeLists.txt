@@ -9,7 +9,7 @@ add_executable(RobotNavigationDemo
         ../RobotNavigation/src/Robot.cpp
         ../RobotNavigation/include/Robot.h)
 
-#SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
 
 set(RobotNavigationFolder ${CMAKE_CURRENT_SOURCE_DIR}/../RobotNavigation)
 include_directories(RobotNavigationDemo ${RobotNavigationFolder}/include)

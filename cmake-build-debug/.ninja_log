@@ -1,13 +1,7 @@
 # ninja log v5
 3	255	1682814398160345428	CMakeFiles/RobotNavigationDemo.dir/Users/cameronfiore/C++/ShieldAI/RobotNavigation/src/Object.cpp.o	22d7393444363dd0
-2396	2497	1683367024594012854	RobotNavigationDemo	bcddbc3658657375
-0	86	1683581924987976004	build.ninja	92a871f2256e425a
-3	1829	1683367023882764303	CMakeFiles/RobotNavigationDemo.dir/main.cpp.o	83d7847d79e764a9
-3	2396	1683367024482481062	CMakeFiles/RobotNavigationDemo.dir/Users/cameronfiore/C++/ShieldAI/RobotNavigation/src/Map.cpp.o	1b9304e11f613072
-3	1463	1683365743176092295	CMakeFiles/RobotNavigationDemo.dir/Users/cameronfiore/C++/ShieldAI/RobotNavigation/src/Robot.cpp.o	6266c0b1087d5693
-3	1340	1683581935529830356	CMakeFiles/RobotNavigationDemo.dir/main.cpp.o	83d7847d79e764a9
-1340	1532	1683581935725026225	RobotNavigationDemo	bcddbc3658657375
-3	1494	1683582053659674832	CMakeFiles/RobotNavigationDemo.dir/main.cpp.o	83d7847d79e764a9
-1494	1557	1683582053727994507	RobotNavigationDemo	bcddbc3658657375
-2	1340	1683582479704211222	CMakeFiles/RobotNavigationDemo.dir/main.cpp.o	83d7847d79e764a9
-1340	1414	1683582479782636800	RobotNavigationDemo	bcddbc3658657375
+2223	2309	1683591525578753612	RobotNavigationDemo	bcddbc3658657375
+0	86	1683651843207865338	build.ninja	92a871f2256e425a
+5	1646	1683591524909433551	CMakeFiles/RobotNavigationDemo.dir/main.cpp.o	83d7847d79e764a9
+6	2223	1683591525478392171	CMakeFiles/RobotNavigationDemo.dir/Users/cameronfiore/C++/ShieldAI/RobotNavigation/src/Map.cpp.o	1b9304e11f613072
+6	2116	1683591525380697184	CMakeFiles/RobotNavigationDemo.dir/Users/cameronfiore/C++/ShieldAI/RobotNavigation/src/Robot.cpp.o	6266c0b1087d5693
