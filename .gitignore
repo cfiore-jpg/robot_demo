@@ -3,3 +3,4 @@ maps/
 *.avi
 *build*/
 .idea/
+.DS_Store
