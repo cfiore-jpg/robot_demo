@@ -1,8 +1,8 @@
 # Install Navigation Library
-## git clone https://github.com/cfiore-jpg/robot.git
-## cd robot && mkdir build && cd build
-## cmake ..
-## make
+1) git clone https://github.com/cfiore-jpg/robot.git
+2) cd robot && mkdir build && cd build
+3) cmake ..
+4) make
 
 
 # Download this demo
