@@ -5,5 +5,11 @@
 4) make
 
 
-# Download this demo
+# Download and make this demo
+1) git clone https://github.com/cfiore-jpg/robot_demo.git
+2) cd robot_demo && mkdir build && cd build
+3) cmake .. -D <full path to robot navigation folder i.e */robot/>
+4) make
 
+# Run and enjoy!
+1) ./RobotNavigationDemo
